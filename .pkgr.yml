@@ -1,0 +1,9 @@
+cli: gondl
+targets:
+  ubuntu-14.04:
+  debian-8:
+  centos-7:
+before:
+  - echo "gondl" > .godir
+after:
+  - rm -f .godir
